@@ -489,8 +489,8 @@
 \newcommand\project[5]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
     \textbf{\textsc{#1}} \hfill \textsc{#2}\smallskip\\
-    #3\\
-    #4\smallskip\\
+    #3\ifthenelse{\equal{#4}{}}{\smallskip}{}\\
+    \ifthenelse{\equal{#4}{}}{}{#4\smallskip\\}
     \footnotesize{\foreach \n in {#5}{\cvtag{\n}}}\\
   \end{minipage}
   \\*
