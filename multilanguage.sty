@@ -1,6 +1,8 @@
 % Author: Riccardo T.
 % Source: https://tex.stackexchange.com/a/31401
 % Access date: 2023-01-25
+% Modified by: Benoît Dubreuil
+% Last modification date: 2023-01-25
 
 %
 % Environment settings
@@ -9,8 +11,8 @@
 \newcommand{\setdoclang}[2]
 {
   \main@language{#2}
-  \def\doclang{#2}
-  \def\doclangshort{#1}
+  \newcommand{doclang}{#2}
+  \newcommand{doclangshort}{#1}
 }
 
 \setdoclang{en}{english}
