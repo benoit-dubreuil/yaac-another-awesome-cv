@@ -66,7 +66,8 @@
 
 % Dependences
 %A Few Useful Packages
-\RequirePackage[english,main=french]{babel}
+\RequirePackage[english,french]{babel}
+\RequirePackage{multilanguage}
 \RequirePackage{fontspec} 					                 % for loading fonts
 \RequirePackage{url,parskip} 	    % other packages for formatting
 \RequirePackage[usenames,dvipsnames]{xcolor}
@@ -83,6 +84,15 @@
 \RequirePackage[skins]{tcolorbox}
 \RequirePackage{fancyhdr}
 \RequirePackage{ifthen}
+
+
+% Main language
+\PassOptionsToPackage{main=french}{babel}
+\setdoclang{fr}{french}
+
+% Change the current language like so:
+%\selectlanguage{english}
+%\setdoclang{en}{english}
 
 
 % Define default accent colors
