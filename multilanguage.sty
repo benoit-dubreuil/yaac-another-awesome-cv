@@ -8,6 +8,11 @@
 % Environment settings
 %
 
+
+\RequirePackage{etoolbox}
+\RequirePackage{xstring}
+
+
 \newcommand{\setdoclang}[2]
 {
   \main@language{#2}
@@ -15,7 +20,10 @@
   \newcommand{doclangshort}{#1}
 }
 
-\setdoclang{en}{english}
+\ifcsdef{bbl@main@language}
+{\setdoclang{\StrLeft{\bbl@main@language}{2}}{\bbl@main@language}}
+{\setdoclang{en}{english}}
+
 
 %
 % Multilingual support commands
