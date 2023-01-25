@@ -83,11 +83,6 @@
 \RequirePackage[skins]{tcolorbox}
 \RequirePackage{fancyhdr}
 \RequirePackage{ifthen}
-\RequirePackage{etoolbox}
-
-
-\protected@csedef{language}{fr}
-%\protected@csedef{language}{en}
 
 
 % Define default accent colors
@@ -257,11 +252,11 @@
 
 % Render author's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
-\newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://www.linkedin.com/in/#1/\csuse{language}}{linkedin.com/in/#1}}
+\newcommand*{\linkedin}[1]{\sociallink{\linkedinSymbol}{https://www.linkedin.com/in/#1/fr}{linkedin.com/in/#1}}
 
 % Render author's viadeo(optional)
 % Usage: \viadeo{<viadeo-nick>}
-\newcommand*{\viadeo}[1]{\sociallink{\viadeoSymbol}{https://www.viadeo.com/\csuse{language}/profile/#1}{viadeo.com/\csuse{language}/profile/#1}}
+\newcommand*{\viadeo}[1]{\sociallink{\viadeoSymbol}{https://www.viadeo.com/fr/profile/#1}{viadeo.com/fr/profile/#1}}
 
 % Render author's github (optional)
 % Usage: \github{<github-nick>}
