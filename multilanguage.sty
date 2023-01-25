@@ -21,7 +21,7 @@
 }
 
 \ifcsdef{bbl@main@language}
-{\setdoclang{\StrLeft{\bbl@main@language}{2}}{\bbl@main@language}}
+{\setdoclang{\StrLeft{\csuse{bbl@main@language}}{2}}{\csuse{bbl@main@language}}}
 {\setdoclang{en}{english}}
 
 
